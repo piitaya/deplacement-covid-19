@@ -2,10 +2,6 @@
   base = ""
   command = "npm run build"
   publish = "dist"
-  
-[[redirects]]
-  from = "/deplacement-covid-19/*"
-  to = "/:splat"
-  status = 200
-  force = true
-  query = {path = ":path"}
+
+[build.environment]
+  PUBLIC_URL = "/"
